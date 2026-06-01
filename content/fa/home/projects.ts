@@ -1,0 +1,98 @@
+// content/fa/home/projects.ts
+
+/**
+ * Persian homepage projects section content.
+ * Keep all project data, labels, links, and image paths outside components.
+ */
+
+export const faHomeProjectsContent = {
+  eyebrow: "OUR REFERENCE PLANTS",
+  title: "پروژه‌های سیمرکو",
+  description:
+    "گروه صنعتی سیمرکو در راه‌اندازی بیش از ۱۷۰ کارخانه داخلی و ۳۵ کارخانه خارجی مشارکت داشته است. در این بخش نگاهی کوتاه به بخشی از پروژه‌ها داریم.",
+  sideDescription:
+    "هر پروژه یک مسیر کامل از امکان‌سنجی، طراحی خط، ساخت ماشین‌آلات، نصب، راه‌اندازی و آموزش اپراتورهاست؛ متناسب با استانداردهای محلی و مواد اولیه هر کشور.",
+  detailsLabel: "مشاهده جزئیات",
+  allProjectsLabel: "مشاهده همه پروژه‌های سیمرکو",
+  allProjectsHref: "/projects",
+  items: [
+    {
+      id: 1,
+      name: "Tamme Tbiyat",
+      tag: "Canned Line",
+      location: "Kabul",
+      country: "Afghanistan",
+      year: "2020",
+      lineType: "Canned beans & compote and jam production line",
+      duration: "8 months",
+      capacity: "70,000 cans per day",
+      imageSrc: "/images/projects/tamme-tbiyat.jpg",
+      slug: "tamme-tbiyat",
+    },
+    {
+      id: 2,
+      name: "Hashemi",
+      tag: "Tomato Line",
+      location: "Kabul",
+      country: "Afghanistan",
+      year: "2017",
+      lineType: "Canned tomato paste production line",
+      duration: "7 months",
+      capacity: "300 tons per day",
+      imageSrc: "/images/projects/hashemi.jpg",
+      slug: "hashemi",
+    },
+    {
+      id: 3,
+      name: "Fara Daru",
+      tag: "Pharmaceutical Line",
+      location: "Eshtehard",
+      country: "Iran",
+      year: "2022",
+      lineType: "Pharmaceutical production line",
+      duration: "2.5 months",
+      capacity: "5 tons per loading",
+      imageSrc: "/images/projects/fara-daru.jpg",
+      slug: "fara-daru",
+    },
+    {
+      id: 4,
+      name: "Shams Food",
+      tag: "Canned Line",
+      location: "Erbil",
+      country: "Iraq",
+      year: "2019",
+      lineType: "Canned tuna & pet food production line",
+      duration: "6 months",
+      capacity: "120,000 cans per shift",
+      imageSrc: "/images/projects/shams-food.jpg",
+      slug: "shams-food",
+    },
+    {
+      id: 5,
+      name: "Al-Nahda Canning",
+      tag: "Tomato Line",
+      location: "Muscat",
+      country: "Oman",
+      year: "2018",
+      lineType: "Tomato paste & vegetable canning line",
+      duration: "5 months",
+      capacity: "180 tons per day",
+      imageSrc: "/images/projects/al-nahda.jpg",
+      slug: "al-nahda-canning",
+    },
+    {
+      id: 6,
+      name: "North Star Foods",
+      tag: "Multi-product Line",
+      location: "Volgograd",
+      country: "Russia",
+      year: "2021",
+      lineType: "Multi-product canned vegetables line",
+      duration: "9 months",
+      capacity: "90,000 cans per day",
+      imageSrc: "/images/projects/north-star.jpg",
+      slug: "north-star-foods",
+    },
+  ],
+} as const;
