@@ -14,6 +14,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { faHomeLatestBlogContent } from "@/content/fa/home/latest-blog";
 import { getAllBlogPosts } from "@/lib/blog";
 import { AppSection } from "../shared/app-section";
+import { mediaUrl } from "@/lib/media-url";
 
 export function HomeLatestBlogSection() {
   const posts = getAllBlogPosts().slice(0, 3);
@@ -84,7 +85,7 @@ export function HomeLatestBlogSection() {
           <Link href={`/blog/${post.slug}`} className="block h-full">
             <div className="relative h-48 overflow-hidden">
               <Image
-                src={post.image}
+                src={mediaUrl(post.image)}
                 alt={post.title}
                 fill
                 sizes="(min-width: 1024px) 340px, (min-width: 768px) 33vw, 100vw"

@@ -1,5 +1,7 @@
 // content/fa/home/about.ts
 
+import { mediaUrl } from "@/lib/media-url";
+
 export const faHomeAboutContent = {
   title: "درباره سیمرکو",
   introStrong: "گروه صنعتی سیمرکو،",
@@ -14,24 +16,24 @@ export const faHomeAboutContent = {
   },
   media: {
     main: {
-      image: "/images/about/about-main.jpg",
-      video: "/videos/about.mp4",
+      image: mediaUrl("/images/about/about-main.jpg"),
+      video: mediaUrl("/videos/about.mp4"),
       alt: "کارخانه و تجهیزات صنعتی سیمرکو",
     },
     items: [
       {
-        image: "/images/about/about-1.jpg",
-        video: "/videos/about-1.mp4",
+        image: mediaUrl("/images/about/about-1.jpg"),
+        video: mediaUrl("/videos/about-1.mp4"),
         alt: "خط تولید محصولات کنسروی",
       },
       {
-        image: "/images/about/about-2.jpg",
-        video: "/videos/about-2.mp4",
+        image: mediaUrl("/images/about/about-2.jpg"),
+        video: mediaUrl("/videos/about-2.mp4"),
         alt: "ماشین‌آلات صنعتی سیمرکو",
       },
       {
-        image: "/images/about/about-3.jpg",
-        video: "/videos/about-3.mp4",
+        image: mediaUrl("/images/about/about-3.jpg"),
+        video: mediaUrl("/videos/about-3.mp4"),
         alt: "تجهیزات پخت و استریلیزاسیون",
       },
     ],

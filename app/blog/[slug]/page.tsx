@@ -9,6 +9,7 @@ import { notFound } from "next/navigation";
 
 import { Badge } from "@/components/ui/badge";
 import { getAllBlogPosts, getBlogPostBySlug } from "@/lib/blog";
+import { mediaUrl } from "@/lib/media-url";
 
 type BlogPostPageProps = {
   params: Promise<{
@@ -44,7 +45,7 @@ export default async function BlogPostPage({ params }: BlogPostPageProps) {
         </p>
 
         <div className="relative mt-8 h-[22rem] overflow-hidden rounded-2xl md:h-[28rem]">
-          <Image src={post.image} alt={post.title} fill className="object-cover" />
+          <Image src={mediaUrl(post.image)} alt={post.title} fill className="object-cover" />
         </div>
 
         <div

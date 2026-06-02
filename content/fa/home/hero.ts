@@ -1,5 +1,7 @@
 // content/fa/home/hero.ts
 
+import { mediaUrl } from "@/lib/media-url";
+
 /**
  * Persian homepage hero content.
  * Keep all hero text, media paths, and shortcut data outside components.
@@ -7,17 +9,17 @@
 
 export const faHomeHeroContent = {
   video: {
-    src: "/videos/home-hero.mp4",
-    poster: "/images/home-hero-poster.jpg",
+    src: mediaUrl("/videos/home-hero.mp4"),
+    poster: mediaUrl("/images/home-hero-poster.jpg"),
   },
 
   yearsBadge: {
-    src: "/images/26-years.png",
+    src: mediaUrl("/images/26-years.png"),
     alt: "۲۶ سال تجربه سیمرکو",
   },
 
   logoType: {
-    src: "/images/seamerco-logo-type-white.png",
+    src: mediaUrl("/images/seamerco-logo-type-white.png"),
     alt: "Seamerco",
   },
 

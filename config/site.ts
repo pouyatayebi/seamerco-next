@@ -1,5 +1,7 @@
 // config/site.ts
 
+import { completeHardNavigation } from "next/dist/client/components/segment-cache/navigation";
+
 /**
  * Global site configuration.
  * Keep business identity, contact information, social links, and global metadata here.
@@ -7,6 +9,7 @@
 
 export const siteConfig = {
   name: "سیمرکو",
+  completeName:"گروه صنعتی سیمرکو",
   englishName: "Seamerco",
   url: "https://www.seamerco-group.com",
   defaultLocale: "fa",

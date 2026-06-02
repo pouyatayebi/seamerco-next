@@ -1,5 +1,7 @@
 // content/fa/home/production-lines.ts
 
+import { mediaUrl } from "@/lib/media-url";
+
 /**
  * Persian homepage production lines content.
  * Keep all card text, image paths, links, and overlay data outside components.
@@ -15,7 +17,7 @@ export const faHomeProductionLinesContent = {
         "طراحی و اجرای خط کامل فرآوری گوجه تازه، تغلیظ، پاستوریزاسیون و بسته‌بندی محصول نهایی.",
       capacity: "۵۰ تا ۵۰۰ تن",
       href: "/solutions/tomato",
-      image: "/images/production-lines/tomato-line.jpg",
+      image: mediaUrl("/images/production-lines/tomato-line.jpg"),
       detailButtonLabel: "جزئیات بیشتر",
       overlay: {
         title: "خط تولید رب گوجه فرنگی",
@@ -49,7 +51,7 @@ export const faHomeProductionLinesContent = {
         "طراحی خط کامل تولید کنسرو حبوبات شامل خیساندن، بلانچینگ، سس‌زنی، پرکنی، دربندی و رتورت.",
       capacity: "۳۰۰۰ تا ۲۰۰۰۰ قوطی",
       href: "/solutions/beans",
-      image: "/images/production-lines/tomato-line.jpg",
+      image: mediaUrl("/images/production-lines/tomato-line.jpg"),
       detailButtonLabel: "جزئیات بیشتر",
       overlay: {
         title: "خط تولید کنسرو حبوبات",
@@ -78,7 +80,7 @@ export const faHomeProductionLinesContent = {
         "راه‌اندازی خط فرآوری و کنسروسازی ماهی شامل دیفراست، پخت اولیه، پرکنی، دربندی و استریلیزاسیون.",
       capacity: "۵۰۰۰ تا ۴۰۰۰۰ قوطی",
       href: "/solutions/canned-tuna-line",
-      image: "/images/production-lines/tomato-line.jpg",
+      image: mediaUrl("/images/production-lines/tomato-line.jpg"),
       detailButtonLabel: "جزئیات بیشتر",
       overlay: {
         title: "خط تولید کنسرو ماهی تون",
@@ -107,7 +109,7 @@ export const faHomeProductionLinesContent = {
         "طراحی خطوط بسته‌بندی رب گوجه شامل پرکن، دربند، لیبلینگ، شیرینگ و تجهیزات انتهای خط.",
       capacity: "۱۰۰۰ تا ۱۲۰۰۰ بسته",
       href: "/solutions/packaging-tomato-paste-line",
-      image: "/images/production-lines/tomato-line.jpg",
+      image: mediaUrl("/images/production-lines/tomato-line.jpg"),
       detailButtonLabel: "جزئیات بیشتر",
       overlay: {
         title: "خط بسته بندی رب گوجه",
@@ -136,7 +138,7 @@ export const faHomeProductionLinesContent = {
         "فرآوری میوه، آماده‌سازی، پخت، پرکنی و بسته‌بندی محصولات مربا و کمپوت در ظرفیت‌های مختلف.",
       capacity: "۵۰۰ تا ۵۰۰۰ کیلوگرم",
       href: "/solutions/jam",
-      image: "/images/production-lines/tomato-line.jpg",
+      image: mediaUrl("/images/production-lines/tomato-line.jpg"),
       detailButtonLabel: "جزئیات بیشتر",
       overlay: {
         title: "خط تولید مربا و کمپوت",
@@ -165,7 +167,7 @@ export const faHomeProductionLinesContent = {
         "طراحی و ساخت ماشین‌آلات آماده‌سازی، فرآوری، پرکنی و دربندی محصولات زیتون و شورجات.",
       capacity: "۵۰۰ تا ۱۰۰۰۰ شیشه",
       href: "/solutions/canned-olive-line",
-      image: "/images/production-lines/tomato-line.jpg",
+      image: mediaUrl("/images/production-lines/tomato-line.jpg"),
       detailButtonLabel: "جزئیات بیشتر",
       overlay: {
         title: "خط تولید کنسرو زیتون",

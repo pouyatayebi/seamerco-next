@@ -1,5 +1,7 @@
 // content/fa/home/projects.ts
 
+import { mediaUrl } from "@/lib/media-url";
+
 /**
  * Persian homepage projects section content.
  * Keep all project data, labels, links, and image paths outside components.
@@ -26,7 +28,7 @@ export const faHomeProjectsContent = {
       lineType: "Canned beans & compote and jam production line",
       duration: "8 months",
       capacity: "70,000 cans per day",
-      imageSrc: "/images/projects/tamme-tbiyat.jpg",
+      imageSrc: mediaUrl("/images/projects/tamme-tbiyat.jpg"),
       slug: "tamme-tbiyat",
     },
     {
@@ -39,7 +41,7 @@ export const faHomeProjectsContent = {
       lineType: "Canned tomato paste production line",
       duration: "7 months",
       capacity: "300 tons per day",
-      imageSrc: "/images/projects/hashemi.jpg",
+      imageSrc: mediaUrl("/images/projects/hashemi.jpg"),
       slug: "hashemi",
     },
     {
@@ -52,7 +54,7 @@ export const faHomeProjectsContent = {
       lineType: "Pharmaceutical production line",
       duration: "2.5 months",
       capacity: "5 tons per loading",
-      imageSrc: "/images/projects/fara-daru.jpg",
+      imageSrc: mediaUrl("/images/projects/fara-daru.jpg"),
       slug: "fara-daru",
     },
     {
@@ -65,7 +67,7 @@ export const faHomeProjectsContent = {
       lineType: "Canned tuna & pet food production line",
       duration: "6 months",
       capacity: "120,000 cans per shift",
-      imageSrc: "/images/projects/shams-food.jpg",
+      imageSrc: mediaUrl("/images/projects/shams-food.jpg"),
       slug: "shams-food",
     },
     {
@@ -78,7 +80,7 @@ export const faHomeProjectsContent = {
       lineType: "Tomato paste & vegetable canning line",
       duration: "5 months",
       capacity: "180 tons per day",
-      imageSrc: "/images/projects/al-nahda.jpg",
+      imageSrc: mediaUrl("/images/projects/al-nahda.jpg"),
       slug: "al-nahda-canning",
     },
     {
@@ -91,7 +93,7 @@ export const faHomeProjectsContent = {
       lineType: "Multi-product canned vegetables line",
       duration: "9 months",
       capacity: "90,000 cans per day",
-      imageSrc: "/images/projects/north-star.jpg",
+      imageSrc: mediaUrl("/images/projects/north-star.jpg"),
       slug: "north-star-foods",
     },
   ],
