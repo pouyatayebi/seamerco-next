@@ -6,30 +6,39 @@ import { HomeGuidesSection } from "@/components/sections/home-guides-section";
 import { HomeLatestBlogSection } from "@/components/sections/home-latest-blog-section";
 import { HomeProductionLinesSection } from "@/components/sections/home-production-lines-section";
 import { HomeProjectsSection } from "@/components/sections/home-projects-section";
-import { IndustrialHero } from "@/components/sections/industrial-hero";
+
+import { Hero } from "@/components/shared/hero";
+import { heroIconMap } from "@/components/shared/hero-icon-map";
 import { faHomeHeroContent } from "@/content/fa/home/hero";
 
 export default function HomePage() {
   return (
     <main>
-      <IndustrialHero
-        videoSrc={faHomeHeroContent.video.src}
-        videoPoster={faHomeHeroContent.video.poster}
-        yearsBadge={faHomeHeroContent.yearsBadge}
-        logoType={faHomeHeroContent.logoType}
-        eyebrow={faHomeHeroContent.eyebrow}
-        title={faHomeHeroContent.title}
-        shortcuts={faHomeHeroContent.shortcuts}
-      /> 
-      <HomeAboutSection /> 
-       <HomeProductionLinesSection /> 
-       <HomeGuidesSection />
-       <HomeProjectsSection />
-
-       <HomeLatestBlogSection />
-                <HomeCtaSection />
      
-       
+<Hero
+  videoSrc={faHomeHeroContent.video.src}
+  videoPoster={faHomeHeroContent.video.poster}
+  heroBadge={faHomeHeroContent.heroBadge}
+  logoType={faHomeHeroContent.logoType}
+  subtitle={faHomeHeroContent.eyebrow}
+  title={faHomeHeroContent.title}
+  featureLinks={{
+    titleTop: faHomeHeroContent.featureLinks.titleTop,
+    titleBottom: faHomeHeroContent.featureLinks.titleBottom,
+    items: faHomeHeroContent.featureLinks.items.map((item) => ({
+      ...item,
+      icon: heroIconMap[item.icon],
+    })),
+  }}
+  showBreadcrumbs={false}
+/>
+      <HomeAboutSection />
+      <HomeProductionLinesSection />
+      <HomeGuidesSection />
+      <HomeProjectsSection />
+
+      <HomeLatestBlogSection />
+      <HomeCtaSection />
     </main>
   );
 }

@@ -4,7 +4,7 @@ import { mediaUrl } from "@/lib/media-url";
 
 /**
  * Persian homepage hero content.
- * Keep all hero text, media paths, and shortcut data outside components.
+ * Keep all hero text, media paths, and feature link data outside components.
  */
 
 export const faHomeHeroContent = {
@@ -13,7 +13,7 @@ export const faHomeHeroContent = {
     poster: mediaUrl("/images/home-hero-poster.jpg"),
   },
 
-  yearsBadge: {
+  heroBadge: {
     src: mediaUrl("/images/26-years.png"),
     alt: "۲۶ سال تجربه سیمرکو",
   },
@@ -26,44 +26,44 @@ export const faHomeHeroContent = {
   eyebrow: "تکنولوژی برتر در تولید محصولات غذایی کنسروی",
   title: "گروه صنعتی سیمرکو",
 
-  shortcuts: {
+  featureLinks: {
     titleTop: "خطوط تولید",
     titleBottom: "محصولات کنسروی",
     items: [
       {
-        slug: "complete-tomato-processing-line",
         title: "خط تولید رب گوجه",
         description: "فرآوری گوجه تازه تا رب تغلیظ‌شده",
+        href: "/solutions/tomato",
         icon: "tomato-processing",
       },
       {
-        slug: "canned-beans-production-line",
         title: "خط تولید کنسرو حبوبات",
         description: "خیساندن، بلانچینگ، سس‌زنی، پرکنی و رتورت",
+        href: "/solutions/beans",
         icon: "canned-beans",
       },
       {
-        slug: "canned-tuna-production-line",
         title: "خط تولید کنسرو ماهی تون",
         description: "دیفراست، پخت اولیه، پرکنی و رتورت",
+        href: "/solutions/canned-tuna-line",
         icon: "canned-tuna",
       },
       {
-        slug: "tomato-packaging-line",
         title: "خط بسته‌بندی رب گوجه",
         description: "پرکنی، دربندی و بسته‌بندی محصولات گوجه",
+        href: "/solutions/packaging-tomato-paste-line",
         icon: "tomato-packaging",
       },
       {
-        slug: "canned-jam-fruit-line",
         title: "خط تولید مربا و کمپوت",
         description: "فرآوری کامل مربا و کمپوت میوه",
+        href: "/solutions/jam",
         icon: "canned-jam-fruit",
       },
       {
-        slug: "canned-olive-pickled-line",
         title: "خط تولید کنسرو زیتون",
         description: "فرآوری و کنسروسازی زیتون و محصولات شور",
+        href: "/solutions/canned-olive-line",
         icon: "canned-olive-pickled",
       },
     ],
