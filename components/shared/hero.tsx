@@ -175,7 +175,7 @@ function HeroHomeFeaturePanel({
             ) : null}
 
             {featureLinks.titleBottom ? (
-              <p className="text-xl font-black leading-8 text-primary md:text-2xl lg:text-3xl">
+              <p className="text-xl font-semibold leading-8 text-primary md:text-2xl lg:text-3xl">
                 {featureLinks.titleBottom}
               </p>
             ) : null}

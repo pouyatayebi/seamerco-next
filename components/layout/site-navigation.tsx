@@ -25,7 +25,7 @@ export function SiteNavigation() {
             <Link
               href={item.href}
               className={cn(
-                "flex h-11 items-center gap-1 px-3 text-[18px] font-normal text-white/78",
+                "flex h-11 items-center gap-1 px-3 text-[14px] font-normal text-white/78",
                 "hover:bg-white/8 hover:text-white"
               )}
             >
