@@ -36,7 +36,6 @@ export type MdFeatureLinks = {
   items?: MdFeatureLinkItem[];
 };
 
-
 export type MdOverview = {
   title?: string;
   paragraphs?: string[];
@@ -47,7 +46,6 @@ export type MdOverview = {
   }[];
   catalogHref?: string;
 };
-
 
 export type MdLineLayoutItem = {
   id?: string;
@@ -70,6 +68,27 @@ export type MdLineLayout = {
   };
   items?: MdLineLayoutItem[];
 };
+export type MdCardGridItem = {
+  slug?: string;
+  cardTitle?: string;
+  cardSubtitle?: string;
+  cardImage?: string;
+  cardHref?: string;
+  cardExcerpt?: string;
+  cardDescription?: string;
+  cardCapacity?: string;
+  cardCode?: string;
+};
+
+export type MdHomeSection = {
+  title?: string;
+  selectedSlugs?: string[];
+};
+
+export type MdCardGrid = {
+  title?: string;
+  items?: MdCardGridItem[];
+};
 
 export type MdPage = {
   type?: string;
@@ -85,7 +104,9 @@ export type MdPage = {
   capacity?: string;
   application?: string;
   overview?: MdOverview;
-lineLayout?: MdLineLayout;
+  lineLayout?: MdLineLayout;
+    cardGrid?: MdCardGrid;
+  homeSection?: MdHomeSection;
   gallery?: GalleryItem[];
   seo?: SeoMeta;
   content?: string;

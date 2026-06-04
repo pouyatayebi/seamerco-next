@@ -5,9 +5,13 @@ import { Hero } from "@/components/shared/hero";
 import { siteConfig } from "@/config/site";
 import { getContentPage } from "@/lib/content";
 import { mediaUrl } from "@/lib/media-url";
-import { heroIconMap, type HeroIconKey } from "@/components/shared/hero-icon-map";
+import {
+  heroIconMap,
+  type HeroIconKey,
+} from "@/components/shared/hero-icon-map";
 import { SolutionOverviewSection } from "@/components/sections/solution-overview-section";
 import { SolutionLineLayoutSection } from "@/components/sections/solution-line-layout-section";
+import { ExpandableCardGrid } from "@/components/shared/expandable-card-grid";
 
 type PageProps = {
   params: Promise<{
@@ -20,10 +24,9 @@ function getMdPath(slug: string[]) {
 }
 
 function getFallbackTitle(slug: string[]) {
-  return slug
-    .at(-1)
-    ?.split("-")
-    .join(" ") ?? siteConfig.defaults.solution.title;
+  return (
+    slug.at(-1)?.split("-").join(" ") ?? siteConfig.defaults.solution.title
+  );
 }
 
 export default async function SolutionDetailPage({ params }: PageProps) {
@@ -36,30 +39,30 @@ export default async function SolutionDetailPage({ params }: PageProps) {
   const cover = page?.cover ?? siteConfig.defaults.solution.cover;
 
   const featureLinks = page?.featureLinks?.items?.length
-  ? {
-      variant: page.featureLinks.variant ?? "compact",
-      titleTop: page.featureLinks.titleTop,
-      titleBottom: page.featureLinks.titleBottom,
-      items: page.featureLinks.items.map((item) => ({
-        title: item.title,
-        subtitle: item.subtitle,
-        description: item.description,
-        href: item.href,
-        icon:
-          item.icon && item.icon in heroIconMap
-            ? heroIconMap[item.icon as HeroIconKey]
-            : undefined,
-        image: item.image,
-      })),
-    }
-  : undefined;
+    ? {
+        variant: page.featureLinks.variant ?? "compact",
+        titleTop: page.featureLinks.titleTop,
+        titleBottom: page.featureLinks.titleBottom,
+        items: page.featureLinks.items.map((item) => ({
+          title: item.title,
+          subtitle: item.subtitle,
+          description: item.description,
+          href: item.href,
+          icon:
+            item.icon && item.icon in heroIconMap
+              ? heroIconMap[item.icon as HeroIconKey]
+              : undefined,
+          image: item.image,
+        })),
+      }
+    : undefined;
 
   return (
     <main>
       <Hero
         title={title}
         subtitle={subtitle}
-        videoSrc={ mediaUrl(page?.video || "")}
+        videoSrc={mediaUrl(page?.video || "")}
         videoPoster={mediaUrl(cover)}
         showBreadcrumbs
         breadcrumbs={[
@@ -69,8 +72,13 @@ export default async function SolutionDetailPage({ params }: PageProps) {
         ]}
         featureLinks={featureLinks}
       />
-<SolutionOverviewSection overview={page?.overview} />
-<SolutionLineLayoutSection lineLayout={page?.lineLayout} />
+      <SolutionOverviewSection overview={page?.overview} />
+      <SolutionLineLayoutSection lineLayout={page?.lineLayout} />
+      <ExpandableCardGrid
+        title={page?.cardGrid?.title}
+        items={page?.cardGrid?.items}
+        detailButtonLabel="جزئیات بیشتر"
+      />
       <AppSection>
         <article className="mx-auto max-w-4xl text-right">
           <div className="rounded-3xl border bg-card p-6 shadow-sm md:p-8">
